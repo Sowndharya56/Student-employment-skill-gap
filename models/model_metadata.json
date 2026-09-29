@@ -1,0 +1,96 @@
+{
+  "model_name": "Random Forest",
+  "selected_by": "5-Fold Stratified CV Macro F1",
+  "training_date": "2026-09-28 21:54:37",
+  "total_dataset_rows": 4000,
+  "train_samples": 3200,
+  "test_samples": 800,
+  "feature_columns": [
+    "GPA",
+    "Credits_Completed",
+    "Exam_Scores",
+    "Attendance_Percentage",
+    "Coding_Skills",
+    "Communication_Skills",
+    "Leadership_Skills",
+    "Clubs_Joined",
+    "Events_Participated",
+    "Internship_Completed",
+    "Internship_Duration_Months",
+    "Library_Visits_Per_Week",
+    "Online_Course_Hours_Per_Week"
+  ],
+  "target_column": "Employment_Competitiveness",
+  "target_classes": [
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "cv_macro_f1_mean": 0.3459168032945933,
+  "cv_accuracy_mean": 0.3465625,
+  "test_evaluation": {
+    "accuracy": 0.32875,
+    "precision_macro": 0.32871384364812256,
+    "recall_macro": 0.3287338195676457,
+    "f1_macro": 0.32871701715222196,
+    "precision_weighted": 0.3287254964089565,
+    "recall_weighted": 0.32875,
+    "f1_weighted": 0.3287309379983314,
+    "confusion_matrix": [
+      [
+        88,
+        91,
+        88
+      ],
+      [
+        94,
+        84,
+        88
+      ],
+      [
+        88,
+        88,
+        91
+      ]
+    ],
+    "classes": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "classification_report": {
+      "High": {
+        "precision": 0.32592592592592595,
+        "recall": 0.3295880149812734,
+        "f1-score": 0.32774674115456237,
+        "support": 267.0
+      },
+      "Medium": {
+        "precision": 0.3408239700374532,
+        "recall": 0.3408239700374532,
+        "f1-score": 0.3408239700374532,
+        "support": 267.0
+      },
+      "Low": {
+        "precision": 0.3193916349809886,
+        "recall": 0.3157894736842105,
+        "f1-score": 0.31758034026465026,
+        "support": 266.0
+      },
+      "accuracy": 0.32875,
+      "macro avg": {
+        "precision": 0.32871384364812256,
+        "recall": 0.3287338195676457,
+        "f1-score": 0.32871701715222196,
+        "support": 800.0
+      },
+      "weighted avg": {
+        "precision": 0.3287254964089565,
+        "recall": 0.32875,
+        "f1-score": 0.3287309379983314,
+        "support": 800.0
+      }
+    }
+  },
+  "disclaimer": "Model performance is measured on this dataset and does not guarantee real-world employment outcomes."
+}
